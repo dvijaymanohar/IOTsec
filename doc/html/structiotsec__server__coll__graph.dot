@@ -1,0 +1,23 @@
+digraph "iotsec_server"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="iotsec_server",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Server structure."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" handle\ntrans" ,fontname="Helvetica"];
+  Node2 [label="iotsec_server_trans",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__server__trans.html",tooltip="Transaction structure."];
+  Node1 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" server" ,fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" req\nresp" ,fontname="Helvetica"];
+  Node3 [label="iotsec_msg_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__msg__t.html",tooltip="Message structure."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" op_list" ,fontname="Helvetica"];
+  Node4 [label="iotsec_msg_op_list_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__msg__op__list__t.html",tooltip="Option linked-list structure."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" first\nlast" ,fontname="Helvetica"];
+  Node5 [label="iotsec_msg_op",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__msg__op.html",tooltip="Option structure."];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" block_rx" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sep_list" ,fontname="Helvetica"];
+  Node6 [label="iotsec_server_path\l_list_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__server__path__list__t.html",tooltip="URI path list structure."];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" first\nlast" ,fontname="Helvetica"];
+  Node7 [label="iotsec_server_path",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structiotsec__server__path.html",tooltip="URI path structure."];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ,fontname="Helvetica"];
+}

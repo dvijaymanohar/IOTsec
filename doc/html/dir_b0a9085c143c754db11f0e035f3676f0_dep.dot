@@ -1,0 +1,14 @@
+digraph "test_application" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b0a9085c143c754db11f0e035f3676f0 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b0a9085c143c754db11f0e035f3676f0.html"];
+    dir_b0a9085c143c754db11f0e035f3676f0 [shape=plaintext label="test_application"];
+  dir_5d3b9833639d3670ac2cbe89d88de061 [shape=box label="iotsec_client" fillcolor="white" style="filled" URL="dir_5d3b9833639d3670ac2cbe89d88de061.html"];
+  dir_8cb06d1ffed0eedb3a4fae7c8a7c07d5 [shape=box label="iotsec_server" fillcolor="white" style="filled" URL="dir_8cb06d1ffed0eedb3a4fae7c8a7c07d5.html"];
+  }
+  dir_97aefd0d527b934f1d99a682da8fe6a9 [shape=box label="lib" fillcolor="white" style="filled" color="red" URL="dir_97aefd0d527b934f1d99a682da8fe6a9.html"];
+  dir_5d3b9833639d3670ac2cbe89d88de061->dir_97aefd0d527b934f1d99a682da8fe6a9 [headlabel="4", labeldistance=1.5 headhref="dir_000004_000000.html"];
+  dir_8cb06d1ffed0eedb3a4fae7c8a7c07d5->dir_97aefd0d527b934f1d99a682da8fe6a9 [headlabel="4", labeldistance=1.5 headhref="dir_000005_000000.html"];
+}
